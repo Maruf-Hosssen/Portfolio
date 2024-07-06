@@ -45,7 +45,7 @@ export default function Footer() {
       >
         <IconButton
           color="inherit"
-          href="https://www.facebook.com"
+          href="https://www.facebook.com/md.marufhasan.963"
           target="_blank"
         >
           <Facebook />
@@ -59,7 +59,7 @@ export default function Footer() {
         </IconButton>
         <IconButton
           color="inherit"
-          href="https://www.linkedin.com"
+          href="https://www.linkedin.com/in/maruf16245/"
           target="_blank"
         >
           <LinkedIn />
@@ -73,7 +73,7 @@ export default function Footer() {
         </IconButton>
       </Box>
       <Typography variant="body2" align="center">
-        &copy; {new Date().getFullYear()} Your Company. All rights reserved.
+        &copy; {new Date().getFullYear()} Maruf Hossen. All rights reserved.
       </Typography>
     </Box>
   );
