@@ -3,7 +3,6 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import { theme } from './theme/theme';
-import useSmoothScroll from '@/library/scroll/Scroll';
 
 const inter = Inter({ subsets: ['latin'] });
 
