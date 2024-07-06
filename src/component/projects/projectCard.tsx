@@ -17,7 +17,6 @@ export type TProject = {
 };
 
 const ProjectCard = ({ project }: { project: TProject }) => {
-  console.log(project);
   return (
     <Card
       sx={{
@@ -39,7 +38,9 @@ const ProjectCard = ({ project }: { project: TProject }) => {
             variant="h5"
             component="div"
             color="text.primary"
-          ></Typography>
+          >
+            {project.title}
+          </Typography>
           <Typography variant="body2" color="text.secondary">
             <Link href={project?.githubClient}>Github client side</Link>
           </Typography>
