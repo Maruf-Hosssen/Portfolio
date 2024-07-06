@@ -6,6 +6,7 @@ import AddLocationIcon from '@mui/icons-material/AddLocation';
 const Contact = () => {
   return (
     <Box
+      id="contact"
       sx={{
         mt: { xs: 4, sm: 6, md: 10, lg: 12 },
         display: { md: 'block', lg: 'flex' },

@@ -14,6 +14,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { List, ListItem } from '@mui/material';
+import Link from 'next/link';
 
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -109,11 +110,21 @@ function Navbar() {
             >
               <List sx={{ backgroundColor: 'background.default' }}>
                 <ListItem>Home</ListItem>
-                <ListItem>About</ListItem>
-                <ListItem>Projects</ListItem>
-                <ListItem>Resume</ListItem>
-                <ListItem>Contact</ListItem>
-                <ListItem>Blog</ListItem>
+                <ListItem>
+                  <Link href="#about">About</Link>
+                </ListItem>
+                <ListItem>
+                  <Link href="#project">Project</Link>
+                </ListItem>
+                <ListItem>
+                  <Link href="#skill">Skills</Link>
+                </ListItem>
+                <ListItem>
+                  <Link href="#contact">Contact</Link>
+                </ListItem>
+                <ListItem>
+                  <Link href="#blog">Blog</Link>
+                </ListItem>
               </List>
             </Menu>
           </Box>
@@ -143,12 +154,25 @@ function Navbar() {
             }}
           >
             <List sx={{ display: 'flex' }}>
-              <ListItem>Home</ListItem>
-              <ListItem>About</ListItem>
-              <ListItem>Projects</ListItem>
-              <ListItem>Resume</ListItem>
-              <ListItem>Contact</ListItem>
-              <ListItem>Blog</ListItem>
+              <ListItem>
+                {' '}
+                <Link href="#banner">Home</Link>
+              </ListItem>
+              <ListItem>
+                <Link href="#about">About</Link>
+              </ListItem>
+              <ListItem>
+                <Link href="#project">Project</Link>
+              </ListItem>
+              <ListItem>
+                <Link href="#skill">Skills</Link>
+              </ListItem>
+              <ListItem>
+                <Link href="#contact">Contact</Link>
+              </ListItem>
+              <ListItem>
+                <Link href="#blog">Blog</Link>
+              </ListItem>
             </List>
           </Box>
 
@@ -161,7 +185,7 @@ function Navbar() {
                 px: '20px',
               }}
             >
-              Lets Talk
+              <Link href="#contact">Lets talk</Link>
             </Button>
 
             <Menu

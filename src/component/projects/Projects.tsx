@@ -1,10 +1,17 @@
+// 'use client';
 import { Box, Grid, Typography } from '@mui/material';
 import React from 'react';
-import ProjectCard from './projectCard';
+import ProjectCard, { TProject } from './projectCard';
 
-const Projects = () => {
+const Projects = async () => {
+  const data = await fetch(
+    'https://portfoliodashboard-kohl.vercel.app/project',
+  );
+
+  const res = await data.json();
   return (
-    <Box sx={{ mt: { xs: 2, sm: 4, md: 4, lg: 6 } }}>
+    <Box id="project" sx={{ mt: { xs: 2, sm: 4, md: 4, lg: 6 } }}>
+      <time dateTime="2016-10-25" suppressHydrationWarning />
       <Typography
         sx={{
           fontWeight: 700,
@@ -24,13 +31,9 @@ const Projects = () => {
       >
         <Grid container spacing={2}>
           <Grid item xs={6} md={4}>
-            <ProjectCard></ProjectCard>
-          </Grid>
-          <Grid item xs={6} md={4}>
-            <ProjectCard></ProjectCard>
-          </Grid>
-          <Grid item xs={6} md={4}>
-            <ProjectCard></ProjectCard>
+            {res?.data?.map((project: TProject, index: number) => (
+              <ProjectCard key={index + 1} project={project}></ProjectCard>
+            ))}
           </Grid>
         </Grid>
       </Box>

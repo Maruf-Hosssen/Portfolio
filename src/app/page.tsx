@@ -1,4 +1,5 @@
 import About from '@/component/about/About';
+import Blog from '@/component/blog/Blog';
 import Banner from '@/component/contact/banner/Banner';
 import Contact from '@/component/contact/Contact';
 import Footer from '@/component/footer/Footer';
@@ -16,6 +17,7 @@ export default function Home() {
         <Projects></Projects>
         <About></About>
         <Skills></Skills>
+        <Blog></Blog>
         <Contact></Contact>
       </Container>
       <Footer></Footer>

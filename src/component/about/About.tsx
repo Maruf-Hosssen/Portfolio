@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const About = () => {
   return (
-    <Box sx={{ mt: { xs: 4, sm: 6, md: 10, lg: 12 } }}>
+    <Box id="about" sx={{ mt: { xs: 4, sm: 6, md: 10, lg: 12 } }}>
       <Typography
         sx={{
           fontWeight: 700,
@@ -120,9 +120,8 @@ const About = () => {
                 mt: '10px',
               }}
             >
-              I have no proffesional working experience.But I have coding
-              experience about 2.5 years.In this long time I have completed many
-              projects.I worked in team project also.
+              I have no proffesional working experience right now. This section
+              will update very soon.
             </Typography>
           </Box>
         </Box>

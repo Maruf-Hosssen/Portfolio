@@ -8,6 +8,7 @@ const Banner = () => {
     'https://drive.google.com/uc?export=download&id=13g31JYXVzrpbPqAL87Y1-tg9aqu8MGzF'; // Modified link to force download
   return (
     <Box
+      id="banner"
       sx={{
         // mt: { xs: 4, sm: 6, md: 10, lg: 12 },
 

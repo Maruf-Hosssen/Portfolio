@@ -13,7 +13,6 @@ const SingleBackendSkill = ({ skill }: { skill: TSkill }) => {
         sx={{
           maxWidth: 180,
           background: 'linear-gradient(145deg, #0E021D, #1C1033)',
-          height: 'auto',
         }}
       >
         <CardActionArea>
@@ -25,6 +24,7 @@ const SingleBackendSkill = ({ skill }: { skill: TSkill }) => {
               justifyContent: 'center',
               alignItems: 'center',
               gap: '20px',
+              height: '180px',
             }}
           >
             <Image src={skill?.img} alt="html" height={80}></Image>
