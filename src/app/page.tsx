@@ -7,7 +7,6 @@ import Navbar from '@/component/navbar/Navbar';
 import Projects from '@/component/projects/Projects';
 import Skills from '@/component/skills/skills';
 import { Box, Container } from '@mui/material';
-
 export default function Home() {
   return (
     <>

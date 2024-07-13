@@ -13,7 +13,9 @@ const SingleBackendSkill = ({ skill }: { skill: TSkill }) => {
         sx={{
           maxWidth: 180,
           background: 'linear-gradient(145deg, #0E021D, #1C1033)',
+          border: '1px solid rgba(28, 16, 51, 0.5)',
         }}
+        className="animate__animated animate__fadeIn"
       >
         <CardActionArea>
           <Box

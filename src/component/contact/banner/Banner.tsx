@@ -1,11 +1,16 @@
+'use client';
 import { Box, Button, Typography } from '@mui/material';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import me from '../../../../assets/me.png';
+import Typewriter from 'typewriter-effect';
 
 const Banner = () => {
   const downloadLink =
     'https://drive.google.com/uc?export=download&id=13g31JYXVzrpbPqAL87Y1-tg9aqu8MGzF'; // Modified link to force download
+
+  //typewrite
+
   return (
     <Box
       id="banner"
@@ -21,6 +26,7 @@ const Banner = () => {
         },
         height: '91vh',
       }}
+      className="animate__animated animate__fadeIn"
     >
       <Box
         sx={{
@@ -71,7 +77,13 @@ const Banner = () => {
             }}
             component="p"
           >
-            DEVELOPER
+            <Typewriter
+              options={{
+                strings: ['Developer', 'Engineer'],
+                autoStart: true,
+                loop: true,
+              }}
+            />
           </Typography>
         </Typography>
         <Typography

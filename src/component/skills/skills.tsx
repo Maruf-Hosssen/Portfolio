@@ -9,10 +9,11 @@ import {
 import React from 'react';
 import html from '../../../assets/logo/html.png';
 import css from '../../../assets/logo/css-3.png';
+import bootstrap from '../../../assets/logo/bt.png';
 import js from '../../../assets/logo/js.png';
 import react from '../../../assets/logo/library (1).png';
 import tw from '../../../assets/logo/tw.png';
-import next from '../../../assets/logo/next.png';
+import next from '../../../assets/logo/nxt.png';
 import redux from '../../../assets/logo/redux.jpg';
 
 import node from '../../../assets/logo/node.png';
@@ -34,6 +35,10 @@ const Skills = () => {
     {
       name: 'CSS-3',
       img: css,
+    },
+    {
+      name: 'Bootstrap',
+      img: bootstrap,
     },
     {
       name: 'Tailwind CSS',

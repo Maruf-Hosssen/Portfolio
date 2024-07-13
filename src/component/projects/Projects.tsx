@@ -9,7 +9,6 @@ const Projects = async () => {
   );
 
   const res = await data.json();
-  console.log(res);
   return (
     <Box id="project" sx={{ mt: { xs: 2, sm: 4, md: 4, lg: 6 } }}>
       <time dateTime="2016-10-25" suppressHydrationWarning />

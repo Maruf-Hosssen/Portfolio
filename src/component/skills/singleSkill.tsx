@@ -14,7 +14,9 @@ const SingleSkill = ({ skill }: { skill: TSkill }) => {
           maxWidth: 180,
           background: 'linear-gradient(145deg, #0E021D, #1C1033)',
           height: 'auto',
+          border: '1px solid rgba(28, 16, 51, 0.5)',
         }}
+        className="animate__animated animate__fadeIn"
       >
         <CardActionArea>
           <Box
@@ -25,6 +27,7 @@ const SingleSkill = ({ skill }: { skill: TSkill }) => {
               justifyContent: 'center',
               alignItems: 'center',
               gap: '20px',
+              height: '180px',
             }}
           >
             <Image src={skill?.img} alt="html" height={80}></Image>
